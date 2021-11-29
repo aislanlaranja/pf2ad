@@ -10,8 +10,8 @@ if [ -f "/etc/samba.patch.version" ]; then
 fi
 
 # Verifica versao pfSense
-if [ "$(cat /etc/version)" != "2.4.3-RELEASE" ]; then
-	echo "ERROR: You need the pfSense version 2.4.3 to apply this script"
+if [ "$(cat /etc/version)" != "2.4.5-RELEASE" ]; then
+	echo "ERROR: You need the pfSense version 2.4.5 to apply this script"
 	exit 2
 fi
 
@@ -39,7 +39,7 @@ EOF
 /usr/sbin/pkg install -r pf2ad net/samba44 2> /dev/null
 
 /usr/sbin/pkg unlock pkg
-/usr/sbin/pkg unlock pfSense-2.4.3
+/usr/sbin/pkg unlock pfSense-2.4.5
 
 rm -rf /usr/local/etc/pkg/repos/pf2ad.conf
 /usr/sbin/pkg update
