@@ -23,7 +23,7 @@ export ASSUME_ALWAYS_YES
 
 # Lock packages necessary
 /usr/sbin/pkg lock pkg
-/usr/sbin/pkg lock pfSense-2.4.3
+/usr/sbin/pkg lock pfSense-2.4.5
 
 mkdir -p /usr/local/etc/pkg/repos
 
