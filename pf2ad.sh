@@ -29,7 +29,7 @@ mkdir -p /usr/local/etc/pkg/repos
 
 cat <<EOF > /usr/local/etc/pkg/repos/pf2ad.conf
 pf2ad: {
-    url: "https://github.com/pf2ad/packages/raw/11.1",
+    url: "https://github.com/aislanlaranja/packages/tree/11.1",
     mirror_type: "https",
     enabled: yes
 }
